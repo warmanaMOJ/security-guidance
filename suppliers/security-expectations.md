@@ -53,11 +53,10 @@ The following basic technical requirements are considered mandatory, unless othe
 - apply the principle of least privilege for all data access. This means restrict by data content, and restrict to read-only rather than read-write wherever possible and appropriate
 - users working with data *must not* be able to see the data of other users or organisations, other than as part of their role or remit
 - data *must* be encrypted at rest and in transit
-- instances of viewing data *must* be logged and audited at the individual user level
-- instances of editing of data *must* be logged and audited at the individual user level
+- All actions on data, such as viewing, editing and deleting, must be logged and audited at the individual user level
 - penetration tests and IT Health Checks *must* be performed *and* satisfactorily passed *before* a service goes live. The tests and checks *must* also be run again, *and* satisfactorily passed:
    - at intervals of not more than 12 calendar months since the last successful tests
-   - before any major change to infrastructure goes live, including but not limited to modifications to functional capability, implementation, or hosting
+   - after any major change to infrastructure goes live, including but not limited to modifications to functional capability, implementation, or hosting
 - any issues identified during Penetration tests or IT Health Check as a result of service changes *must* be mitigated or accepted before the service changes go live
 - user submitted data *must* be validated to prevent web threats such as injection attacks and cross site scripting
 - an 'idle' timeout *must* be enforced, to detect and close inactive sessions
